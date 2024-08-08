@@ -92,23 +92,23 @@ function showCard(star: StarSchema) {
   divElement.appendChild(stageNameH2);
 
   const nameH3 = document.createElement("h3") as HTMLHeadingElement;
-  nameH3.textContent = `${firstNameEl.value} + ${lastNameEl.value}`;
+  nameH3.textContent = `${firstNameEl.value} ` + `${lastNameEl.value}`;
   divElement.appendChild(nameH3);
 
   const countOfAlben = document.createElement("p") as HTMLParagraphElement;
-  countOfAlben.textContent = `has a count of ${albenEl.value} Alben`;
+  countOfAlben.textContent = `has a count of ${albenEl.value} albums.`;
   divElement.appendChild(countOfAlben);
 
   const single = document.createElement("p") as HTMLParagraphElement;
-  single.textContent = `The top Single is ${topSingleEl.value}`;
+  single.textContent = `He had  ${topSingleEl.value} top singles in the billboard charts,`;
   divElement.appendChild(single);
 
   const genre = document.createElement("p") as HTMLParagraphElement;
-  genre.textContent = `and produce in the Genres ${genreEl.value}`;
+  genre.textContent = `and covers the genre(s) ${genreEl.value}`;
   divElement.appendChild(genre);
 
   const age = document.createElement("p") as HTMLParagraphElement;
-  age.textContent = `The Artist has a age of ${ageEl.value} years`;
+  age.textContent = `${firstNameEl.value} is ${ageEl.value} years old!`;
   divElement.appendChild(age);
 
   const description = document.createElement("p") as HTMLParagraphElement;
