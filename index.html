@@ -1,13 +1,77 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="de">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Panini-karten-erstellungs-seite</title>
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <h1>Add a Card</h1>
+      <form action="" id="form">
+        <input
+          type="text"
+          id="first_name"
+          placeholder=" Hier den Vornamen eintragen"
+        />
+        <input
+          type="text"
+          id="last_name"
+          placeholder=" Hier den Nachnamen eintragen"
+        />
+        <input
+          type="text"
+          id="stage_name"
+          placeholder=" Hier den Künstlernamen eintragen"
+        />
+        <input
+          type="text"
+          id="alben"
+          placeholder=" Hier die Anzahl an Alben eintragen"
+        />
+        <input
+          type="text"
+          id="top-single"
+          placeholder=" Hier die Top-single eintragen"
+        />
+        <input
+          type="text"
+          id="genre"
+          placeholder=" Hier das/die Genre(s) des Interpreten eintragen"
+        />
+        <input
+          type="text"
+          id="age"
+          placeholder=" Hier das Alter des Interpreten eintragen"
+        />
+        <textarea
+          type="text"
+          id="description"
+          rows="4"
+          cols="30"
+          placeholder=" Hier einmal beschreiben was den Interpreten so ausmacht und co"
+        >
+        </textarea>
+        <input type="text" id="image_url" placeholder="Bild URL hier:" />
+        <button type="submit" id="sub_btn">Submit</button>
+      </form>
+    </div>
+    <div id="spawn_card">
+      <!-- <div class="card">
+        <h2> -> stagename
+          h3 -> first+Lastname
+          p -> age
+          p -> alben 
+          p -> single
+          p -> genre
+          br
+          p -> discription
+
+          image in background
+      </div> -->
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
